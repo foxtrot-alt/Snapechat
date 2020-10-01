@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Snapechat</string>
+    <string name="sorting_hat">\"Or perhaps in Slytherin,\nYou\'ll make your real friends,\nThose cunning folk use any means,\nTo achieve their ends\"</string>
+    <string name="welcome">Welcome to Slytherin House.\nSlytherin will help you on\nyour way to greatness.</string>
+    <string name="quizStart">Hmmm, So you are a wizard?\nBut do you have what it takes to be a Slytherin?\nSwipe right and let\'s test you!</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+android:background="@drawable/slytherin7">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="3dp" android:layout_marginBottom="32dp" android:id="@+id/cardView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+            <ImageView
+                    android:layout_width="98dp"
+                    android:layout_height="92dp" app:srcCompat="@drawable/logo2"
+                    android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"/>
+            <Button
+                    android:text="login"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signup" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_corners"
+                    android:fontFamily="@font/hocus_pocus"
+                    android:textSize="40sp"
+                    android:textColor="@color/colorAccent"/>
+            <Button
+                    android:text="signup"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/rounded_corners"
+                    android:fontFamily="@font/hocus_pocus"
+                    android:textSize="40sp"
+                    android:textColor="@color/colorAccent" app:layout_constraintHorizontal_bias="0.497"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/signup"/>
+            <TextView
+                    android:text="Snapechat"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/parry_hotter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/login"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+            android:text="@string/sorting_hat"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/parry_hotter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/cardView"
+            android:textSize="20sp" android:textAlignment="center"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
